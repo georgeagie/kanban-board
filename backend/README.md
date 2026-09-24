@@ -11,11 +11,13 @@ cd backend
 uv sync
 ```
 
-## Run (once `main.py` exposes `app`)
+## Run
 
 ```bash
 cd backend
 uv run uvicorn main:app --reload --port 8000
 ```
 
-Docs: http://localhost:8000/docs
+- Docs: http://localhost:8000/docs
+- Health: http://localhost:8000/api/health
+- SQLite file: `data/kanban.db` (created on startup)
